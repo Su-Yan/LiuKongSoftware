@@ -236,7 +236,7 @@ fi
 systemctl enable dnsmasq.service >/dev/null 2>&1
 }
 function web() {
-rm -rf /var/www/* && cd /var/www && wget -q https://down.cangshui.net/-mysh/FAS/fas_web.zip
+rm -rf /var/www/* && cd /var/www && wget -q https://github.com/Su-Yan/LiuKongSoftware/FAS/fas_web.zip
 if [ ! -f /var/www/fas_web.zip ]; then
 	echo "警告！FAS-WEB配置文件下载失败，请自行检查下载源是否可用！脚本停止！"
 	exit;0
@@ -1121,7 +1121,7 @@ echo
 echo "检查安装环境"
 safe
 yum -y install curl wget openssl >/dev/null 2>&1
-host=https://down.cangshui.net/-mysh/FAS/
+host=https://github.com/Su-Yan/LiuKongSoftware/FAS/
 logo
 }
 main
